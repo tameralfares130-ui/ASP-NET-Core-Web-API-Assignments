@@ -1,0 +1,32 @@
+
+@TodoApi_HostAddress = http://localhost:5000
+
+
+### Verify DTO using GET
+GET http://localhost:5000/api/todoitems/2
+Content-Type: application/json
+
+{
+  "name": "Finish assignment",
+  "isComplete": false,
+  "secret": "My private information"
+}
+
+### Get all tasks
+GET http://localhost:5000/api/todoitems
+
+### Get task with ID 2
+GET http://localhost:5000/api/todoitems/2
+
+### Update task with ID 2
+PUT http://localhost:5000/api/todoitems/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "feed fish",
+  "isComplete": false
+}
+
+### Delete task with ID 2
+DELETE http://localhost:5000/api/todoitems/3

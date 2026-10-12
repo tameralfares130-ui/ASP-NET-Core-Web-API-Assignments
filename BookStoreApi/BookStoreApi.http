@@ -1,0 +1,33 @@
+@BookStoreApi_HostAddress = http://localhost:5001
+
+### Get all books
+GET {{BookStoreApi_HostAddress}}/api/books
+Accept: application/json
+
+### Add a new book
+POST {{BookStoreApi_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+  "bookName": "Harry Potter",
+  "price": 25.99,
+  "category": "Fantasy",
+  "author": "J. K. Rowling"
+}
+### Get book by ID
+GET {{BookStoreApi_HostAddress}}/api/books/6acc9f22bd175e93a2c71a61
+Accept: application/json
+### Update book
+PUT {{BookStoreApi_HostAddress}}/api/books/6acc9f22bd175e93a2c71a61
+Content-Type: application/json
+
+{
+  "bookName": "Harry Potter",
+  "price": 30.99,
+  "category": "Fantasy",
+  "author": "J. K. Rowling"
+}
+
+###Delete book
+DELETE {{BookStoreApi_HostAddress}}/api/books/6acc9f22bd175e93a2c71a61
+

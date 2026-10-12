@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo API with JavaScript</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+
+    <h3>Add a Todo</h3>
+    <form id="addForm">
+        <input type="text" id="addName" placeholder="Enter todo name" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <h3>My Todos</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Complete</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="todos"></tbody>
+    </table>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
